@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">My Portfolio</a>
+    <nav class="navbar">
+      <a href="#home" style="--i:1" class="active">Home</a>
+      <a href="#about" style="--i:2">About</a>
+      <a href="#skills" style="--i:3">Skills</a>
+      <a href="#contact" style="--i:4">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-container">
+      <div class="home-content">
+        <h3>Hello! It's Me</h3>
+        <h1>Amabelle Coleen D. Baldevino</h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>This personal website is a front-end development project created as part of my academic course in Information Technology. 
+          <br>It aims to present who I am—both as a student and an aspiring web developer—by showcasing my technical abilities and personal identity.</p>
+        
+        <div class="home-sci">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-whatsapp'></i></a>
+          <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+        <a href="#about" class="btn-box">More About Me</a>
+      </div>
+  
+      <div class="home-img">
+        <img src="img/profile.jpg" alt="Profile Image">
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="img/about.jpg" alt="Amabelle's Profile Picture" />
+    </div>
+    <div class="about-text">
+      <h2>About <span>Me</span></h2>
+      <h4>Colay</h4>
+      <p>I’m a second-year Bachelor of Science in Information Technology student who is passionate about building clean and functional web interfaces. I enjoy learning how small design decisions can greatly improve user experiences, and this website reflects my interest in combining logic with creativity through code and design.</p>
+      <p>This project allowed me to express my goals and personal growth as a developer. It gave me a platform to reflect on where I started and where I hope to go in the future. As I continue learning, I aspire to expand my skills beyond the front end and eventually become a full-stack developer capable of handling both design and functionality.</p>
+      <a href="#skills" class="btn-box">My Skills</a>
+    </div>
+  </section>
+
+  <section class="services" id="skills">
+    <div class="container">
+      <h2 class="sub-title">Professional <span>Skills</span></h2>
+      <p style="text-align: center; color: #ccc; margin-bottom: 30px;">
+        I have strong skills in front-end development using HTML, CSS, and JavaScript, focusing on creating responsive and user-friendly interfaces. 
+        <br>My understanding of UX/UI principles allows me to design intuitive experiences that enhance user interaction. 
+        <br>I am constantly refining my skills to build clean, functional websites that balance both design and usability.
+      </p>
+
+      <div class="skill">
+        <div class="label"><i class="fab fa-html5"></i> HTML5 <span>50%</span></div>
+        <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="label"><i class="fab fa-css3-alt"></i> CSS <span>50%</span></div>
+        <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="label"><i class="fab fa-js-square"></i> JavaScript <span>20%</span></div>
+        <div class="bar"><div class="fill" style="width: 20%;"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="label"><i class="fas fa-pencil-ruler"></i> UX/UI <span>40%</span></div>
+        <div class="bar"><div class="fill" style="width: 40%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contact <span>Me</span></h2>
+      <h4>Let’s work together</h4>
+      <p>Feel free to reach out through the form or connect with me on social media.</p>
+      <ul class="contact-list">
+        <li><i class='bx bxs-send'></i> amabelle_baldevino@gmail.com</li>
+        <li><i class='bx bxs-phone'></i> 0962-232-9796</li>
+        <li><i class='bx bxl-github'></i> <a href="https://github.com/Baldzcoleen" target="_blank">GitHub</a></li>
+        <li><i class='bx bxl-facebook'></i> <a href="https://www.facebook.com/ace.baldz.5">Facebook</a></li>
+      </ul>
+    </div>
+  
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" id="name" placeholder="Your Name" required />
+      <input type="email" name="email" id="email" placeholder="Your Email" required />
+      <span id="email-validation-message"></span>
+      <input type="text" name="phone" id="phone" placeholder="Your Phone Number" required />
+      <span id="phone-validation-message"></span>
+      <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-box">Send Message</button>
+      <p id="error-msg" style="color: red; margin-top: 10px;"></p>
+    </form>
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Amabelle Coleen D. Baldevino. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
